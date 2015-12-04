@@ -6,6 +6,8 @@ AUTHOR = u'Sergio Rey'
 SITENAME = u'Geographic Information Analysis'
 SITEURL = ''
 
+HIDE_SIDEBAR = True
+
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
@@ -33,4 +35,11 @@ DEFAULT_PAGINATION = False
 
 THEME = 'themes/pelican-bootstrap3'
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
+
+
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
+
+MENUITEMS = (('Syllabus', '/pages/syllabus.html'), ('Schedule',
+                                                    '/pages/schedule.html'))

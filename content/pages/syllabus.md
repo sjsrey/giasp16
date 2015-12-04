@@ -81,13 +81,13 @@ This semester we will be covering conceptual material through lectures on Tuesda
 
 -   short quizzes (each meeting)
 
--   student initiated discussions of lecture/reading materials
-
 -   exploration of spatial analysis methods through open source software
 
 -   group work on exercises
 
 -   individualized work on projects
+
+-   student initiated discussions of lecture/reading materials
 
 -   other learning activities as we discover them
 
