@@ -38,8 +38,7 @@ THEME = 'themes/pelican-bootstrap3'
 # RELATIVE_URLS = True
 
 
-DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
-
-MENUITEMS = (('Syllabus', '/pages/syllabus.html'), ('Schedule',
-                                                    '/pages/schedule.html'))
+#DISPLAY_CATEGORIES_ON_MENU = False
+#DISPLAY_PAGES_ON_MENU = False
+#
+#MENUITEMS = (('Syllabus', 'syllabus.html'), ('Schedule', 'schedule.html'))
