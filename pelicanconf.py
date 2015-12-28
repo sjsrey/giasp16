@@ -9,6 +9,7 @@ SITEURL = ''
 HIDE_SIDEBAR = True
 
 PATH = 'content'
+STATIC_PATHS = ['pdfs']
 
 TIMEZONE = 'Europe/Paris'
 
