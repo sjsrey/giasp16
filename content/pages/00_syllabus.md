@@ -59,9 +59,11 @@ your own time outside of class. You are encouraged to work collaboratively on
 the exercises while keeping in mind that you are responsible for understanding
 the completed exercise as these will stress methods you will need to apply in
 your project (see below). We will have a minimum of 8 weekly exercises, graded
-on a pass-fail basis. To obtain credit for the exercise component of the course
-you must succesffully complete 4 of these. Failure to do so will result in a 0
+on a 10-point scale. To obtain credit for the exercise component of the course
+you must successfully complete 4 of these. Failure to do so will result in a 0
 on the exercise component and a failing grade for the course.
+
+
 
 
 ###Project/Presentations
@@ -126,13 +128,12 @@ to bring your own laptop to class so that you may work with these
 packages outside of the classroom availability.**
 
 ## Readings
-Video assignments listed on Blackboard are to be completed prior to the
-class meeting. Assigned readings are listed in Table [tab:schedule] and
+Assigned readings are listed in Table [tab:schedule] and
 are also to be done prior to class meeting. The majority of these are
 taken from:
 
--   David O’Sullivan and David J. Unwin (2010) *Geographic Information
-    Analysis*, Wiley: Hoboken. Second edition.
+-   David O’Sullivan and David J. Unwin (2014) *Geographic Information
+    Analysis*, Wiley: Hoboken. Second edition. Available to ASU students [on-line][ou].
 
 Additional readings will be assigned by topic.
 
@@ -155,3 +156,6 @@ at the beginning of the semester either during office hours or by
 appointment. Note: Prior to receiving disability accommodations,
 verification of eligibility from the Disability Resource Center (DRC) is
 required. Disability information is confidential.
+
+
+[ou]: http://site.ebrary.com.ezproxy1.lib.asu.edu/lib/asulib/reader.action?docID=10905778&ppg=1
