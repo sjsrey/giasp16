@@ -6,7 +6,7 @@ Title: Syllabus
 |----------------|-----------------------------------------------|
 | email          | `srey@asu.edu`                                |
 | Office         | Coor Hall 5612                                |
-| Office Hours   | Tue 2:30-3:30 and by appointment              |
+| Office Hours   | Tue 14:30-15:30 and by appointment              |
 | Class Meetings | Tue, Thu 10:30-11:45am                        |
 | Room           | Coor 191                                      |
 
@@ -27,6 +27,7 @@ operational issues in the statistical analysis of geographic information
 and the ability to extend these methods in your own research.
 
 ##Prerequisites
+The formal prerequisite for this course is [GIS 470 Statistics for Geographers][470].
 All participants are expected to have working knowledge of spatial
 analysis concepts and to be familiar with multivariate statistics. No
 extensive GIS background beyond ArcGIS/QGIS basics is needed.
@@ -107,30 +108,25 @@ expected to abide by the following rules:
     course session.
 
 ## Software
-While this course does not have a formal lab unit, in the sense that you
-would get an additional credit unit, the course material lends itself
-rather nicely to computationally based instruction. We will utilize a
-set of [open source](http://www.opensource.org) software packages that
-you can put on your own (or a friend’s) computer to work on the examples
-and exercises in support of the course material. We will set aside part
-of the lectures to demonstrate various capabilities of these software
-packages to support spatial analysis. You will have additional
-opportunity to apply these methods both in the individual exercises. We
-will rely on two main packages. The first is
-[R](http://www.r-project.org/) which is freely available and runs on a
-number of platforms, including Linux, Unix, Mac OS X, and Windows (all
-flavors). It is a very powerful mathematical programming language with
-many data analysis, graphical and computational functions. The second
-package is [PySAL](http://pysal.org/) which is a Python library for
-spatial data analysis and geocomputation. **We will cover installation
-of these packages early in the semester and you are strongly encouraged
-to bring your own laptop to class so that you may work with these
-packages outside of the classroom availability.**
+While this course does not have a formal lab unit, in the sense that you would
+get an additional credit unit, the course material lends itself rather nicely
+to computationally based instruction. We will utilize a set of [open
+source](http://www.opensource.org) software packages that you can put on your
+own (or a friend’s) computer to work on the examples and exercises in support
+of the course material. We will set aside part of the lectures to demonstrate
+various capabilities of these software packages to support spatial analysis.
+You will have additional opportunity to apply these methods both in the
+individual exercises. We will mainly rely on [PySAL](http://pysal.org/) which
+is a Python library for spatial data analysis and geocomputation. PySAL is is
+freely available and runs on a number of platforms, including Linux, Unix, Mac
+OS X, and Windows (all flavors).   **We will cover
+[installation]({filename}tools.md) of these packages early in the semester and
+you are strongly encouraged to bring your own laptop to class so that you may
+work with these packages outside of the classroom availability.**
 
 ## Readings
-Assigned readings are listed in Table [tab:schedule] and
-are also to be done prior to class meeting. The majority of these are
-taken from:
+Assigned readings are listed in the [Schedule]({filename}01_schedule.md) and
+are be done prior to class meeting. The majority of these are taken from:
 
 -   David O’Sullivan and David J. Unwin (2014) *Geographic Information
     Analysis*, Wiley: Hoboken. Second edition. Available to ASU students [on-line][ou].
@@ -157,5 +153,5 @@ appointment. Note: Prior to receiving disability accommodations,
 verification of eligibility from the Disability Resource Center (DRC) is
 required. Disability information is confidential.
 
-
+[470]: https://webapp4.asu.edu/catalog/course?s=GIS&n=470&c=TEMPE&t=2161&f=COOR191&r=21845
 [ou]: http://site.ebrary.com.ezproxy1.lib.asu.edu/lib/asulib/reader.action?docID=10905778&ppg=1
