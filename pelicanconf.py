@@ -9,7 +9,7 @@ SITEURL = ''
 HIDE_SIDEBAR = True
 
 PATH = 'content'
-STATIC_PATHS = ['images', 'pdfs']
+STATIC_PATHS = ['images', 'pdfs', 'figures']
 
 TIMEZONE = 'Europe/Paris'
 
@@ -43,3 +43,5 @@ THEME = 'themes/pelican-bootstrap3'
 #DISPLAY_PAGES_ON_MENU = False
 #
 #MENUITEMS = (('Syllabus', 'syllabus.html'), ('Schedule', 'schedule.html'))
+
+CC_LICENSE = 'CC-BY'

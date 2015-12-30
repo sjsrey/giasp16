@@ -15,9 +15,9 @@ For the course we will require the following packages be installed
 - matplotlib
 - pandas
 - folium
-- [GeoDaSpace][GeoDaSpace]
+- cartopy
 
-There are a number of ways to install PySAL and these dependencies. For the workshop, if you do not yet have the dependencies installed we suggest using one of two scientific Python distributions (below). These have the advantages of including most of the dependencies for PySAL as well as PySAL itself. Moreover, both allow for updating PySAL to the most recent release  (1.10 released July 31, 2015) which is more current that what is listed in either distribution. Both of these distributions also allow for installation of our final dependency, folium.
+There are a number of ways to install PySAL and these dependencies. For the course, if you do not yet have the dependencies installed we suggest using one of two scientific Python distributions (below). These have the advantages of including most of the dependencies for PySAL as well as PySAL itself. Moreover, both allow for updating PySAL to the most recent release  (1.10 released July 31, 2015) which is more current that what is listed in either distribution. Both of these distributions also allow for installation of additional dependencies.
 
 #### PySAL via Anaconda Python Distribution
 
@@ -28,7 +28,7 @@ There are a number of ways to install PySAL and these dependencies. For the work
 
 #### Creating a Custom Conda Environment
 
-If you already have Anaconda installed and you did not want to modify your default environemnt, you can create a *custom conda environment* for this session using the following commands:
+If you already have Anaconda installed and you did not want to modify your default environment, you can create a *custom conda environment* for this session using the following commands:
 
 1. `conda create -n pysal110 scipy matplotlib jupyter ipython pandas ipywidgets`
 2. `source activate pysal110`
@@ -42,7 +42,7 @@ When you are done working in this environment, you can get back to your default 
 
 #### PySAL via Enthought Canopy
 
-Note that the Academic version of Canopy comes with PySAL version 1.7. For this workshop we will be using PySAL 1.10. Upgrading in Canopy can be done as follows:
+Note that the Academic version of Canopy comes with PySAL version 1.7. For this course we will be using PySAL 1.10. Upgrading in Canopy can be done as follows:
 
 1. Install [Canopy][Canopy]
 2. Run Canopy
@@ -73,7 +73,7 @@ For Anaconda:
    Then `<Shift-Enter>`
  
 Your screen should look something like:
-![Anaconda setup](esda/figures/anaconda.png)
+![Anaconda setup]({filename}/figures/anaconda.png)
 
 
 For Enthought Canopy:
@@ -95,12 +95,11 @@ For Enthought Canopy:
  
 
 Your screen should look something like:
-![Enthought setup](esda/figures/enthought.png)
-
+![Enthought setup]({filename}/figures/enthought.png)
 
 #### Issues
 
-If you run into any problems, double check that you have installed both the upgraded version of PySAL and folium (see above). If problems persist, please contact me <sjsrey@gmail.com>.
+If you run into any problems, double check that you have installed both the upgraded version of PySAL and folium (see above). If problems persist, please contact me <srey@asu.edu>.
 
 
 [PySAL]: http://pysal.org
@@ -109,7 +108,4 @@ If you run into any problems, double check that you have installed both the upgr
 [Canopy]: https://www.enthought.com/store
 [VirtualBox]: https://www.virtualbox.org/wiki/Downloads
 [VirtualBox 4.3.12]: http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe
-[Vagrant]: http://www.vagrantup.com/downloads.html
-[Vagrantfile]: Vagrantfile
 [Sergio Rey]: https://geoplan.asu.edu/people/sergio-j-rey
-[Luc Anselin]: https://geoplan.asu.edu/people/luc-anselin
