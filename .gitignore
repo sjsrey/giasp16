@@ -2,3 +2,14 @@
 *.pyc
 *.swp
 output/
+.DS_Store
+.ropeproject/config.py
+.ropeproject/globalnames
+.ropeproject/history
+.ropeproject/objectdb
+cache/ArticlesGenerator-Readers
+cache/PagesGenerator-Readers
+content/.DS_Store
+content/pages/.DS_Store
+content/pages/lectures/01_giaIntro.pdf
+content/pages/lectures/intro_gia.md
