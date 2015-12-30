@@ -3,16 +3,16 @@ Title: Schedule
 
 #### Week 1 
 
-* Lecture: [Introduction to GIA]({filename}/pdfs/01_giaIntro.pdf) (January 12, 2015)
-* Hands-on: [Tools and Installation](|filename|install.md) (January 14, 2015)
-* [Notebook 1](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/test.ipynb)
+* Lecture: [Course Introduction]({filename}00_syllabus.md) (January 12, 2015)
+* Hands-on: [Tools and Installation](|filename|tools.md) (January 14, 2015)
 
 #### Week 2
 
-* Lecture: Spatial Analysis (January 19, 2015)
+* Lecture: [Introduction to GIA]({filename}/pdfs/01_giaIntro.pdf) (January 19, 2015)
 * Readings
     * O'Sullivan and Unwin (2014) [Ch 1][ou1] 
-* Hands-on: Tools Introduction (January 21, 2015)
+* Hands-on: Introduction to Jupyter and Python (January 21, 2015)
+* [Notebook 1](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/test.ipynb)
 
 #### Week 3
 
