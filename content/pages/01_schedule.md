@@ -18,6 +18,8 @@ Title: Schedule
 * Lecture: Spatial Data (January 26, 2015)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 2][ou2]
 * Hands-on: Spatial Data Processing (January 28, 2015)
+* [Exercise 02]({filename}/exercises/e02.md) (**Due February 04, 2015**)
+
 
 #### Week 4
 
