@@ -11,6 +11,7 @@ Title: Schedule
 * Lecture: [Introduction to GIA]({filename}/pdfs/01_giaIntro.pdf) (January 19, 2015)
 * Readings: O'Sullivan and Unwin (2014) [Ch 1][ou1] 
 * Hands-on: [Introduction to Jupyter and Python](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/00_notebook_intro.ipynb) (January 21, 2015)
+* [Exercise 01]({filename}/exercises/e01.md) (**Due January 28, 2015**)
 
 #### Week 3
 
