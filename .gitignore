@@ -1,6 +1,7 @@
 *.pid
 *.pyc
 *.swp
+*checkpoint.ipynb
 output/
 .DS_Store
 .ropeproject/config.py
@@ -14,3 +15,4 @@ content/pages/.DS_Store
 content/pages/lectures/01_giaIntro.pdf
 content/pages/lectures/intro_gia.md
 content/pages/notebooks/pysal_narsc_2015-master/
+develop_server
