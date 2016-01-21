@@ -5,6 +5,15 @@ Title: Schedule
 
 * Lecture: [Course Introduction]({filename}00_syllabus.md) (January 12, 2015)
 * Hands-on: [Tools and Installation](|filename|tools.md) (January 14, 2015)
+* Prerequisite check: See the following videos (January 14, 2015)
+
+	* [Discrete Random Variables][DRV]
+	* [Continuous Random Variables][CRV]
+	* [Distribution of the Mean, Hypothesis Tests, and the Central Limit Theory][CLT]
+
+[DRV]: https://www.youtube.com/watch?v=nW3_UWeSCrs&feature=youtu.be
+[CRV]: http://youtu.be/fT-z6HGrGzE     
+[CLT]: http://youtu.be/OaD_bN3eg8o
 
 #### Week 2
 
@@ -15,7 +24,7 @@ Title: Schedule
 
 #### Week 3
 
-* Lecture: Spatial Data (January 26, 2015)
+* Lecture: [Spatial Data]({filename}/pdfs/02_data.pdf)   (January 26, 2015)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 2][ou2]
 * Hands-on: [Spatial Data Processing](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/01_spatial_data_processing.ipynb) (January 28, 2015)
 * [Exercise 02]({filename}/exercises/e02.md) (**Due February 04, 2015**)
