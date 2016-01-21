@@ -30,6 +30,8 @@ There are a number of ways to install PySAL and these dependencies. For the cour
 
 If you already have Anaconda installed and you did not want to modify your default environment, you can create a *custom conda environment* for this session using the following commands:
 
+On Mac OS X:
+
 1. `conda create -n pysal110 scipy matplotlib jupyter ipython pandas ipywidgets`
 2. `source activate pysal110`
 4. `pip install -U pysal`
@@ -38,6 +40,18 @@ If you already have Anaconda installed and you did not want to modify your defau
 When you are done working in this environment, you can get back to your default environment with:
 
  `source deactivate`
+
+On Windows:
+
+1. `conda create -n pysal110 scipy matplotlib jupyter ipython pandas ipywidgets`
+2. `activate pysal110`
+4. `pip install -U pysal`
+5. `pip install -U folium`
+
+When you are done working in this environment, you can get back to your default environment with:
+
+ ` deactivate`
+
 
 
 #### PySAL via Enthought Canopy
@@ -68,11 +82,15 @@ For Anaconda:
 4. In the second cell in the notebook enter  
    `import folium`
    Then `<Shift-Enter>`
-5. In the third cell enter
+5. In the third cell enter on Mac OS X
    `!which python`
    Then `<Shift-Enter>`
- 
-Your screen should look something like:
+5. In the third cell enter on Windows
+   `!where python`
+   Then `<Shift-Enter>`
+
+
+Your screen should look something like (Mac OS X):
 ![Anaconda setup]({filename}/figures/anaconda.png)
 
 
