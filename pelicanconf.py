@@ -9,7 +9,7 @@ SITEURL = ''
 HIDE_SIDEBAR = True
 
 PATH = 'content'
-STATIC_PATHS = ['images', 'pdfs', 'figures']
+STATIC_PATHS = ['images', 'pdfs', 'figures', 'data']
 
 TIMEZONE = 'Europe/Paris'
 

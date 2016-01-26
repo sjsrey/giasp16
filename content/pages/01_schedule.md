@@ -20,13 +20,15 @@ Title: Schedule
 * Lecture: [Introduction to GIA]({filename}/pdfs/01_giaIntro.pdf) (January 19, 2015)
 * Readings: O'Sullivan and Unwin (2014) [Ch 1][ou1] 
 * Hands-on: [Introduction to Jupyter and Python](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/00_notebook_intro.ipynb) (January 21, 2015)
-* [Exercise 01]({filename}/exercises/e01.md) (**Due January 28, 2015**)
+* [Exercise 01]({filename}/exercises/e01.md) (**Due February 04, 2015**)
 
 #### Week 3
 
 * Lecture: [Spatial Data]({filename}/pdfs/02_data.pdf)   (January 26, 2015)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 2][ou2]
-* Hands-on: Spatial Data Processing (January 28, 2015)
+* Hands-on: [Spatial Data Processing](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/01_spatial_data_processing.ipynb) (January 28, 2015)
+* [Exercise 02]({filename}/exercises/e02.md) (**Due February 11, 2015**)
+
 
 #### Week 4
 
