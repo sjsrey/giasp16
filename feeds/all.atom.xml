@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Geographic Information Analysis</title><link href="http://sjsrey.github.io/giasp16/" rel="alternate"></link><link href="http://sjsrey.github.io/giasp16/feeds/all.atom.xml" rel="self"></link><id>http://sjsrey.github.io/giasp16/</id><updated>2016-01-21T00:00:00+01:00</updated><entry><title>Exercise 01</title><link href="http://sjsrey.github.io/giasp16/exercise-01.html" rel="alternate"></link><updated>2016-01-21T00:00:00+01:00</updated><author><name>Sergio Rey</name></author><id>tag:sjsrey.github.io,2016-01-21:giasp16/exercise-01.html</id><summary type="html">&lt;h2&gt;Instructions&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Run through the notebooks 01-06 at &lt;a href="https://github.com/rajathkumarmp/Python-Lectures"&gt;Python-Lectures&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create a notebook that does the following&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Takes the string &lt;code&gt;Geographic Information Analysis&lt;/code&gt;and creates a list of the individual characters in the string&lt;/li&gt;
-&lt;li&gt;Takes the same string and converts it to a list of words&lt;/li&gt;
-&lt;li&gt;For the list of words from the previous step use set operations to
-   find the union of characters belonging to the words&lt;/li&gt;
-&lt;li&gt;For the same list of words use set operations to find the intersection of characters belonging to the words&lt;/li&gt;
-&lt;li&gt;Using the string from step 1, create a dictionary that has each unique character as they key and the value defined as the number of times the character appears in the string&lt;/li&gt;
-&lt;li&gt;Write a list comprehension that returns all the odd valued integers between 0 and 100 except those between 40 and 50&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Submission&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Due: 2016-01-28 10:30a.m.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Submit your notebook file with the name &lt;code&gt;e01.ipynb&lt;/code&gt; on Blackboard. Be sure to document your file to include any notes and your name.&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Exercise 02</title><link href="http://sjsrey.github.io/giasp16/exercise-02.html" rel="alternate"></link><updated>2016-01-21T00:00:00+01:00</updated><author><name>Sergio Rey</name></author><id>tag:sjsrey.github.io,2016-01-21:giasp16/exercise-02.html</id><summary type="html">&lt;h2&gt;Instructions&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Geographic Information Analysis</title><link href="http://sjsrey.github.io/giasp16/" rel="alternate"></link><link href="http://sjsrey.github.io/giasp16/feeds/all.atom.xml" rel="self"></link><id>http://sjsrey.github.io/giasp16/</id><updated>2016-01-28T00:00:00+01:00</updated><entry><title>Exercise 02</title><link href="http://sjsrey.github.io/giasp16/exercise-02.html" rel="alternate"></link><updated>2016-01-28T00:00:00+01:00</updated><author><name>Sergio Rey</name></author><id>tag:sjsrey.github.io,2016-01-28:giasp16/exercise-02.html</id><summary type="html">&lt;h2&gt;Instructions&lt;/h2&gt;
 &lt;p&gt;This exercise uses the data sets &lt;a href="http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/01_    spatial_data_processing.ipynb"&gt;introduced in class&lt;/a&gt;. Make sure you have them stored locally.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;For the Mexican income data &lt;a href="http://sjsrey.github.io/giasp16/data/mexico.csv"&gt;mexico.csv&lt;/a&gt;, find the following for each year:&lt;ol&gt;
@@ -43,4 +23,24 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Due: 2016-02-11 10:30a.m.&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Submit your notebook file with the name &lt;code&gt;e02.ipynb&lt;/code&gt; on Blackboard. Be sure to document your file to include any notes and your name.&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>Exercise 01</title><link href="http://sjsrey.github.io/giasp16/exercise-01.html" rel="alternate"></link><updated>2016-01-21T00:00:00+01:00</updated><author><name>Sergio Rey</name></author><id>tag:sjsrey.github.io,2016-01-21:giasp16/exercise-01.html</id><summary type="html">&lt;h2&gt;Instructions&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Run through the notebooks 01-06 at &lt;a href="https://github.com/rajathkumarmp/Python-Lectures"&gt;Python-Lectures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a notebook that does the following&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Takes the string &lt;code&gt;Geographic Information Analysis&lt;/code&gt;and creates a list of the individual characters in the string&lt;/li&gt;
+&lt;li&gt;Takes the same string and converts it to a list of words&lt;/li&gt;
+&lt;li&gt;For the list of words from the previous step use set operations to
+   find the union of characters belonging to the words&lt;/li&gt;
+&lt;li&gt;For the same list of words use set operations to find the intersection of characters belonging to the words&lt;/li&gt;
+&lt;li&gt;Using the string from step 1, create a dictionary that has each unique character as they key and the value defined as the number of times the character appears in the string&lt;/li&gt;
+&lt;li&gt;Write a list comprehension that returns all the odd valued integers between 0 and 100 except those between 40 and 50&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Submission&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Due: 2016-01-28 10:30a.m.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Submit your notebook file with the name &lt;code&gt;e01.ipynb&lt;/code&gt; on Blackboard. Be sure to document your file to include any notes and your name.&lt;/li&gt;
 &lt;/ul&gt;</summary></entry></feed>
