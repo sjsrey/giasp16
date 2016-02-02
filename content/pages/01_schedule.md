@@ -19,28 +19,27 @@ Title: Schedule
 
 * Lecture: [Introduction to GIA]({filename}/pdfs/01_giaIntro.pdf) (January 19, 2015)
 * Readings: O'Sullivan and Unwin (2014) [Ch 1][ou1] 
-* Hands-on: [Introduction to Jupyter and Python](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/00_notebook_intro.ipynb) (January 21, 2015)
+* Hands-on: [Introduction to Jupyter and Python](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/00_notebook_intro.ipynb) (January 21, 2015)
 * [Exercise 01]({filename}/exercises/e01.md) (**Due February 04, 2015**)
 
 #### Week 3
 
 * Lecture: [Spatial Data]({filename}/pdfs/02_data.pdf)   (January 26, 2015)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 2][ou2]
-* Hands-on: [Spatial Data Processing](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/lectures/content/pages/notebooks/01_spatial_data_processing.ipynb) (January 28, 2015)
+* Hands-on: [Spatial Data Processing](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/01_spatial_data_processing.ipynb) (January 28, 2015)
 * [Exercise 02]({filename}/exercises/e02.md) (**Due February 11, 2015**)
 
 
 #### Week 4
 
-* Lecture: Lattice Data (February 2, 2015)
+* Lecture: [Lattice Data]({filename}/pdfs/03_lattice.pdf) (February 2, 2015)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 7][ou7] and [Ch 3][ou3]
-* Hands-on: Choropleth Mapping (February 4, 2015)
-* *Project Proposals Due (February 4, 2015)*
+* Hands-on: [Choropleth Mapping](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/03_choropleth_mapping.ipynb) (February 04, 2015)
 
 #### Week 5
 
-* Lecture: Spatial Lag and Spatial Weights  (February 9, 2015)
-* Readings: [Anselin and Rey (2015) pg 35-91][msep]
+* Lecture: [Spatial Lag and Spatial Weights]({filename}/pdfs/04_weights.pdf)  (February 9, 2015)
+* Readings: [Anselin and Rey (2015) pg 35-91]({filename}/pdfs/anselin_rey_weights.pdf)
 * Hands-on:  Spatial Weights (February 11, 2015)
 
 #### Week 6 
@@ -78,10 +77,7 @@ Title: Schedule
 * Hands-on: Distance Based Methods (March 24, 2015)
 
 #### Week 11 
-
-* Lecture: Point Pattern Visualization (March 29, 2015)
-* Readings:  O'Sullivan and Unwin (2014) [Ch 6][ou6] 
-* Hands-on: Kernels and Heat Maps (March 31, 2015)
+* No class meeting (AAG Meetings)
 * *Project Status Report II (March 31, 2015)*
 
 #### Week 12 
@@ -128,5 +124,4 @@ Title: Schedule
 [ou7]: http://site.ebrary.com.ezproxy1.lib.asu.edu/lib/asulib/reader.action?docID=10905778&ppg=211
 [ou8]: http://site.ebrary.com.ezproxy1.lib.asu.edu/lib/asulib/reader.action?docID=10905778&ppg=239
 [ou9]: http://site.ebrary.com.ezproxy1.lib.asu.edu/lib/asulib/reader.action?docID=10905778&ppg=263
-[msep]: http://www.amazon.com/Modern-Spatial-Econometrics-Practice-GeoDaSpace/dp/0986342106/ref=cm_cr_pr_product_top?ie=UTF8
 [smith_k]: http://www.seas.upenn.edu/%7Eese502/NOTEBOOK/Part_I/4_K_Functions.pdf
