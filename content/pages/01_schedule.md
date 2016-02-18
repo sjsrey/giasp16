@@ -27,7 +27,7 @@ Title: Schedule
 * Lecture: [Spatial Data]({filename}/pdfs/02_data.pdf)   (January 26, 2015)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 2][ou2]
 * Hands-on: [Spatial Data Processing](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/01_spatial_data_processing.ipynb) (January 28, 2015)
-* [Exercise 02]({filename}/exercises/e02.md) (**Due February 11, 2015**)
+* [Exercise 02]({filename}/exercises/e02.md) (**Due February 18, 2015**)
 
 
 #### Week 4
@@ -40,39 +40,37 @@ Title: Schedule
 
 * Lecture: [Spatial Lag and Spatial Weights]({filename}/pdfs/04_weights.pdf)  (February 9, 2015)
 * Readings: [Anselin and Rey (2015) pg 35-91]({filename}/pdfs/anselin_rey_weights.pdf)
-* Hands-on:  Spatial Weights (February 11, 2015)
+* Projects:  [Call for Proposals](|filename|projectabs.md) (Feburary 9, 2015)
 
 #### Week 6 
 
-* Lecture: Global Spatial Autocorrelation   (February 16, 2015)
-* Readings:  O'Sullivan and Unwin (2014) [Ch 7][ou7]
-* Hands-on:  Spatial Clustering and Global Tests (February 18, 2015)
-* *Project Data Submission (February 18, 2015)*
+* Project Work (February 16, 2015)
+* Hands-on:  [Spatial Weights](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/04_spatial_weights.ipynb) (February 18, 2015)
+* *Project Proposal Submission (February 18, 2015)*
 
 #### Week 7 
 
-* Lecture: Local  Spatial Autocorrelation   (February 23, 2015)
-* Readings:  O'Sullivan and Unwin (2014) [Ch 8][ou8]
-* Hands-on:  Hot-spot, cold-spot detection  (February 25, 2015)
+* Lecture: Global Spatial Autocorrelation   (February 23, 2015)
+* Readings:  O'Sullivan and Unwin (2014) [Ch 7][ou7]
+* Hands-on:  Spatial Clustering and Global Tests (February 25, 2015)
 
 
 #### Week 8
 
-* Lecture: Point Patterns (March 1, 2015)
-* Readings:  O'Sullivan and Unwin (2014) [Ch 4][ou4]  and [Ch 5][ou5]
-* Hands-on: Point Pattern Processing (March 3, 2015)
+* Lecture: Local  Spatial Autocorrelation   (March 1, 2015)
+* Readings:  O'Sullivan and Unwin (2014) [Ch 8][ou8]
+* Hands-on:  Hot-spot, cold-spot detection  (March 3 , 2015)
 * *Project Status Report I (March 3, 2015)*
 
 #### Week 9
-
-* Lecture: Point Pattern Processes (March 15, 2015)
-* Readings:  O'Sullivan and Unwin (2014) [Ch 6][ou6] 
-* Hands-on: Simulating Point Patterns (March 17 2015)
-
+* Lecture: Point Patterns (March 15, 2015)
+* Readings:  O'Sullivan and Unwin (2014) [Ch 4][ou4]  and [Ch 5][ou5]
+* Hands-on: Point Pattern Processing (March 17, 2015)
 
 #### Week 10 
 
-* Lecture: Point Pattern Test Statistics (March 22, 2015)
+* Lecture: Point Patterns and Test Statistics (March 22, 2015)
+* Readings:  O'Sullivan and Unwin (2014) [Ch 6][ou6] 
 * Readings: [Smith (2015)][smith_k]
 * Hands-on: Distance Based Methods (March 24, 2015)
 
