@@ -55,7 +55,7 @@ Title: Schedule
 * Hands-on:  Spatial Clustering and Global Tests (February 25, 2016)
 	* [Global Spatial Autocorrelation Tests](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/05_global.ipynb)
 	* [Homicide Rates US South](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/06_global_south.ipynb)
-* Exercise 3  (**Due March 17, 2016**)
+* [Exercise 03]({filename}/exercises/e03.md) (**Due March 17, 2016**)
 
 #### Week 8
 
