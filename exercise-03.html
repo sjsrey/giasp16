@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Archives - Geographic Information Analysis</title>
+    <title>Exercise 03 - Geographic Information Analysis</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,15 +9,19 @@
 
 
 
+<link rel="canonical" href="http://sjsrey.github.io/giasp16/exercise-03.html">
 
         <meta name="author" content="Sergio Rey" />
+        <meta name="description" content="Instructions This exercises uses the following data sets that you need to have installed locally: nat.geojsonnj NAT.shp NAT.dbf Note you can download a zip file with the data here. Once you download the zip file and extract the files they can be found in: giasp16/content/pages ..." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Geographic Information Analysis" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Geographic Information Analysis"/>
-        <meta property="og:url" content="http://sjsrey.github.io/giasp16"/>
-        <meta property="og:description" content="Geographic Information Analysis"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Exercise 03"/>
+        <meta property="og:url" content="http://sjsrey.github.io/giasp16/exercise-03.html"/>
+        <meta property="og:description" content="Instructions This exercises uses the following data sets that you need to have installed locally: nat.geojsonnj NAT.shp NAT.dbf Note you can download a zip file with the data here. Once you download the zip file and extract the files they can be found in: giasp16/content/pages ..."/>
+        <meta property="article:published_time" content="2016-02-25" />
+            <meta property="article:section" content="exercises" />
+            <meta property="article:author" content="Sergio Rey" />
 
 
     <!-- Bootstrap -->
@@ -32,6 +36,8 @@
 
 
 
+        <link href="http://sjsrey.github.io/giasp16/feeds/exercises.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Geographic Information Analysis exercises ATOM Feed"/>
 
 </head>
 <body>
@@ -59,7 +65,7 @@ Geographic Information Analysis            </a>
                          <li><a href="http://sjsrey.github.io/giasp16/">
                              GIS471/598
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="http://sjsrey.github.io/giasp16/category/exercises.html">Exercises</a>
                         </li>
             </ul>
@@ -76,22 +82,87 @@ Geographic Information Analysis            </a>
     <div class="row">
         <div class="col-lg-12">
     <section id="content">
-        <h1>Archives for Geographic Information Analysis</h1>
-        <div id="archives">
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-02-25T00:00:00+01:00">Thu 25 February 2016</time></span>
-                    <a href="http://sjsrey.github.io/giasp16/exercise-03.html">Exercise 03</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-28T00:00:00+01:00">Thu 28 January 2016</time></span>
-                    <a href="http://sjsrey.github.io/giasp16/exercise-02.html">Exercise 02</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-01-21T00:00:00+01:00">Thu 21 January 2016</time></span>
-                    <a href="http://sjsrey.github.io/giasp16/exercise-01.html">Exercise 01</a>
-                </p>
-        </div>
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://sjsrey.github.io/giasp16/exercise-03.html"
+                       rel="bookmark"
+                       title="Permalink to Exercise 03">
+                        Exercise 03
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-02-25T00:00:00+01:00"> Thu 25 February 2016</time>
+    </span>
+
+
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h2>Instructions</h2>
+<p>This exercises uses the following data sets that you need to have installed
+locally:</p>
+<ul>
+<li>nat.geojsonnj</li>
+<li>NAT.shp</li>
+<li>NAT.dbf</li>
+</ul>
+<p>Note you can download a zip file with the data <a href="https://github.com/sjsrey/giasp16/archive/master.zip">here</a>.
+Once you download the zip file and extract the files they can be found in:</p>
+<p><code>giasp16/content/pages/notebooks/data</code></p>
+<p>You may also want to revisit some of the <a href="http://sjsrey.github.io/giasp16/pages/schedule.html">notebooks</a> from previous sessions to
+help carry out the following tasks.</p>
+<h2>Tasks</h2>
+<ol>
+<li>Using the national shapefile file, construct the following spatial weights
+   matrices:<ul>
+<li>Rook contiguity</li>
+<li>Queen contiguity</li>
+<li>knn (k=5)</li>
+</ul>
+</li>
+<li>For the homicide rates in 1970 and 1990 carry out a descriptive statistical
+   analysis that reports<ul>
+<li>Histograms</li>
+<li>Kernel density of the statistical distributions</li>
+<li>Summary statistics (mean, median, standard deviation, max, min)</li>
+</ul>
+</li>
+<li>For the same rates create the following choropleth maps<ul>
+<li>Quintiles</li>
+<li>Quartiles</li>
+<li>Maximum Breaks</li>
+<li>HeadsTails</li>
+</ul>
+</li>
+<li>Using the three spatial weights matrices you built, carry out tests for global spatial
+   autocorrelation<ul>
+<li>Join counts (binary based on above/below the median)</li>
+<li>Moran's I</li>
+</ul>
+</li>
+</ol>
+<p>Be sure to include an interpretation of each of your analyses within the
+notebook.</p>
+<h2>Submission</h2>
+<ul>
+<li><strong>Due: 2016-03-09 10:30a.m.</strong></li>
+<li>Submit your notebook file with the name <code>e03.ipynb</code> on Blackboard. Be sure to document your file to include any notes and your name.</li>
+</ul>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
     </div>
 </div>
