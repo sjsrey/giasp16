@@ -59,9 +59,9 @@ Title: Schedule
 
 #### Week 8
 
-* Lecture: Local  Spatial Autocorrelation   (March 1, 2016)
+* Lecture: [Local  Spatial Autocorrelation]({filename}/pdfs/06_local.pdf)   (March 1, 2016)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 8][ou8]
-* Hands-on:  Hot-spot, cold-spot detection  (March 3 , 2016)
+* Hands-on:  [Hot-spot, cold-spot detection](http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/07_local_south.ipynb)   (March 3 , 2016)
 * *Project Status Report I (March 3, 2016)*
 
 #### Week 9
