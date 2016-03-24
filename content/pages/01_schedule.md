@@ -65,16 +65,15 @@ Title: Schedule
 * *Project Status Report I (March 3, 2016)*
 
 #### Week 9
-* Lecture: Point Patterns (March 15, 2016)
+* Lecture: [Point Patterns]({filename}/pdfs/07_points.pdf) (March 15, 2016)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 4][ou4]  and [Ch 5][ou5]
-* Hands-on: Point Pattern Processing (March 17, 2016)
 
 #### Week 10 
 
-* Lecture: Point Patterns and Test Statistics (March 22, 2016)
+* Lecture: [Point Patterns and Test Statistics]({filename}/pdfs/08_point_methods.pdf) (March 22, 2016)
 * Readings:  O'Sullivan and Unwin (2014) [Ch 6][ou6] 
 * Readings: [Smith (2016)][smith_k]
-* Hands-on: Distance Based Methods (March 24, 2016)
+* Hands-On:  [Point Pattern Processing](|filename|pointProcessing.md) (March 24, 2016)
 
 #### Week 11 
 * No class meeting (AAG Meetings)
