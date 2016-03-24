@@ -286,7 +286,7 @@ prepending /home/serge/anaconda2/envs/points471/bin to PATH
 
 
 <p>So we see that the search path points to the conda environment that is currently active.</p>
-<h2>Installing PySAL into Conda Environment</h2>
+<h2>Installing PySAL into the Conda Environment</h2>
 <p>We relied on conda to install most of the packages we will need to analyze point patterns. There are a few additional packages that are not currently part of conda that we need. We would also like to install an experimental version of PySAL which differs from the one in the conda system.</p>
 <h3>Installing folium</h3>
 <div class="highlight"><pre>(points471)~/D/g/G/G/4/points ❯❯❯ pip install folium                                                                                                         ⏎
@@ -335,8 +335,18 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </pre></div>
 
 
-<p>You should see version 1.11.1. If not, it means you likely haven't activated the conda environment and instead are using your base anaconda install. Activae your environment as explained above, if this is  the case.</p>
+<p>You should see version 1.11.1. If not, it means you likely haven't activated the conda environment and instead are using your base anaconda install. Activate your environment as explained above, if this is  the case.</p>
 <h2>Introduction to Point Patterns in PySAL</h2>
+<p>We are now in a position to begin exploring point pattern analysis in PySAL. In this session we will look at two notebooks:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/pointpattern.ipynb">pointpattern.ipynb</a> </li>
+<li><a href="http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/centrography.ipynb">centrography.ipynb</a> </li>
+</ul>
+<p>Once you are done with this session you can either close the terminal you were working in or deactivate the environment:</p>
+<div class="highlight"><pre>(points471)~/D/g/G/G/4/points ❯❯❯ source deactivate
+discarding /home/serge/anaconda2/envs/points471/bin from PATH
+~/D/g/G/G/4/points ❯❯❯
+</pre></div>
         </div>
     </section>
         </div>
