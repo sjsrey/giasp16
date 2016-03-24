@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Processing Point Patterns in PySAL - Geographic Information Analysis</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="http://sjsrey.github.io/giasp16/pages/processing-point-patterns-in-pysal.html">
+
+        <meta name="author" content="Sergio Rey" />
+        <meta name="description" content="In this session we will install a new experimental branch of PySAL that implements methods for point pattern analysis. We will do so using a sandbox that isolates this code from your working installation of Anaconda and PySAL. Learning how to do this is important as it gives you a ..." />
+
+    <meta property="og:site_name" content="Geographic Information Analysis" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Processing Point Patterns in PySAL"/>
+    <meta property="og:url" content="http://sjsrey.github.io/giasp16/pages/processing-point-patterns-in-pysal.html"/>
+    <meta property="og:description" content="In this session we will install a new experimental branch of PySAL that implements methods for point pattern analysis. We will do so using a sandbox that isolates this code from your working installation of Anaconda and PySAL. Learning how to do this is important as it gives you a ..." />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://sjsrey.github.io/giasp16/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://sjsrey.github.io/giasp16/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://sjsrey.github.io/giasp16/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://sjsrey.github.io/giasp16/theme/css/style.css" type="text/css"/>
+
+        <link href="http://sjsrey.github.io/giasp16/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Geographic Information Analysis ATOM Feed"/>
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://sjsrey.github.io/giasp16/" class="navbar-brand">
+Geographic Information Analysis            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://sjsrey.github.io/giasp16/pages/syllabus.html">
+                             Syllabus
+                          </a></li>
+                         <li><a href="http://sjsrey.github.io/giasp16/pages/schedule.html">
+                             Schedule
+                          </a></li>
+                         <li><a href="http://sjsrey.github.io/giasp16/">
+                             GIS471/598
+                          </a></li>
+                        <li >
+                            <a href="http://sjsrey.github.io/giasp16/category/exercises.html">Exercises</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+	    <!-- <li><a href="http://sjsrey.github.io/giasp16/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">SArchives</span></a></li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+    <section id="content" class="body">
+        <h1 class="entry-title">Processing Point Patterns in PySAL</h1>
+        
+        <div class="entry-content">
+            <p>In this session we will install a new experimental branch of PySAL that implements methods for point pattern analysis. We will do so using a sandbox that isolates this code from your working installation of Anaconda and PySAL. Learning how to do this is important as it gives you a safe way to explore new developments in Python libraries without risking a production installation.</p>
+<p>We will carry out three main tasks in this session
+Note that this is all being done under Linux, but the commands should be similar to what you would do under OS X and Windows.</p>
+<ol>
+<li>
+<p>Create a new conda environment</p>
+</li>
+<li>
+<p>Install additional packages outside of conda into that environment</p>
+</li>
+<li>
+<p>Introduce the first point pattern models in PySAL</p>
+</li>
+</ol>
+<h2>Creating a new Conda Environment</h2>
+<p>In what follows we first check to see that conda is installed:</p>
+<div class="highlight"><pre>    ~ ❯❯❯ which conda
+    /home/serge/anaconda2/bin/conda
+</pre></div>
+
+
+<p>Good. Now we will create a new conda environment called <code>points471</code> and install several packages into it:</p>
+<div class="highlight"><pre>    ~ ❯❯❯ conda create -n points471 scipy pandas shapely matplotlib jupyter
+    Fetching package metadata: ....
+    Solving package specifications: ..........................................................................
+    Package plan for installation in environment /home/serge/anaconda2/envs/points471:
+
+    The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    geos-3.4.2                 |                0        15.4 MB  defaults
+    libgfortran-3.0            |                0         261 KB  defaults
+    mkl-11.3.1                 |                0       121.2 MB  defaults
+    openssl-1.0.2g             |                0         3.2 MB  defaults
+    decorator-4.0.9            |           py27_0          12 KB  defaults
+    mistune-0.7.2              |           py27_0         570 KB  defaults
+    numpy-1.10.4               |           py27_1         6.0 MB  defaults
+    pygments-2.1.1             |           py27_0         1.2 MB  defaults
+    pytz-2016.2                |           py27_0         176 KB  defaults
+    pyzmq-15.2.0               |           py27_0         704 KB  defaults
+    setuptools-20.3            |           py27_0         452 KB  defaults
+    shapely-1.5.13             |           py27_0         255 KB  defaults
+    wheel-0.29.0               |           py27_0          81 KB  defaults
+    cycler-0.10.0              |           py27_0          11 KB  defaults
+    pexpect-4.0.1              |           py27_0          63 KB  defaults
+    pip-8.1.1                  |           py27_0         1.5 MB  defaults
+    python-dateutil-2.5.1      |           py27_0         235 KB  defaults
+    scipy-0.17.0               |      np110py27_2        30.1 MB  defaults
+    traitlets-4.2.1            |           py27_0         108 KB  defaults
+    ipython-4.1.2              |           py27_1         930 KB  defaults
+    jupyter_core-4.1.0         |           py27_0          51 KB  defaults
+    pandas-0.18.0              |      np110py27_0        12.0 MB  defaults
+    jupyter_client-4.2.2       |           py27_0          96 KB  defaults
+    matplotlib-1.5.1           |      np110py27_0         8.2 MB  defaults
+    ipykernel-4.3.1            |           py27_0         117 KB  defaults
+    nbconvert-4.1.0            |           py27_0         273 KB  defaults
+    jupyter_console-4.1.1      |           py27_0          24 KB  defaults
+    notebook-4.1.0             |           py27_1         4.4 MB  defaults
+    qtconsole-4.2.0            |           py27_0         159 KB  defaults
+    ipywidgets-4.1.1           |           py27_0          98 KB  defaults
+    jupyter-1.0.0              |           py27_2           2 KB  defaults
+    ------------------------------------------------------------
+                       Total:       207.6 MB
+
+    The following NEW packages will be INSTALLED:
+
+    backports_abc:      0.4-py27_0         defaults
+    cairo:              1.12.18-6          defaults
+    cycler:             0.10.0-py27_0      defaults
+    decorator:          4.0.9-py27_0       defaults
+    fontconfig:         2.11.1-5           defaults
+    freetype:           2.5.5-0            defaults
+    geos:               3.4.2-0            defaults
+    ipykernel:          4.3.1-py27_0       defaults
+    ipython:            4.1.2-py27_1       defaults
+    ipython_genutils:   0.1.0-py27_0       defaults
+    ipywidgets:         4.1.1-py27_0       defaults
+    jinja2:             2.8-py27_0         defaults
+    jsonschema:         2.4.0-py27_0       defaults
+    jupyter:            1.0.0-py27_2       defaults
+    jupyter_client:     4.2.2-py27_0       defaults
+    jupyter_console:    4.1.1-py27_0       defaults
+    jupyter_core:       4.1.0-py27_0       defaults
+    libgfortran:        3.0-0              defaults
+    libpng:             1.6.17-0           defaults
+    libsodium:          1.0.3-0            defaults
+    libxml2:            2.9.2-0            defaults
+    markupsafe:         0.23-py27_0        defaults
+    matplotlib:         1.5.1-np110py27_0  defaults
+    mistune:            0.7.2-py27_0       defaults
+    mkl:                11.3.1-0           defaults
+    nbconvert:          4.1.0-py27_0       defaults
+    nbformat:           4.0.1-py27_0       defaults
+    notebook:           4.1.0-py27_1       defaults
+    numpy:              1.10.4-py27_1      defaults
+    openssl:            1.0.2g-0           defaults
+    pandas:             0.18.0-np110py27_0 defaults
+    path.py:            8.1.2-py27_1       defaults
+    pexpect:            4.0.1-py27_0       defaults
+    pickleshare:        0.5-py27_0         defaults
+    pip:                8.1.1-py27_0       defaults
+    pixman:             0.32.6-0           defaults
+    ptyprocess:         0.5-py27_0         defaults
+    pycairo:            1.10.0-py27_0      defaults
+    pygments:           2.1.1-py27_0       defaults
+    pyparsing:          2.0.3-py27_0       defaults
+    pyqt:               4.11.4-py27_1      defaults
+    python:             2.7.11-0           defaults
+    python-dateutil:    2.5.1-py27_0       defaults
+    pytz:               2016.2-py27_0      defaults
+    pyzmq:              15.2.0-py27_0      defaults
+    qt:                 4.8.7-1            defaults
+    qtconsole:          4.2.0-py27_0       defaults
+    readline:           6.2-2              defaults
+    scipy:              0.17.0-np110py27_2 defaults
+    setuptools:         20.3-py27_0        defaults
+    shapely:            1.5.13-py27_0      defaults
+    simplegeneric:      0.8.1-py27_0       defaults
+    singledispatch:     3.4.0.3-py27_0     defaults
+    sip:                4.16.9-py27_0      defaults
+    six:                1.10.0-py27_0      defaults
+    sqlite:             3.9.2-0            defaults
+    ssl_match_hostname: 3.4.0.2-py27_0     defaults
+    terminado:          0.5-py27_1         defaults
+    tk:                 8.5.18-0           defaults
+    tornado:            4.3-py27_0         defaults
+    traitlets:          4.2.1-py27_0       defaults
+    wheel:              0.29.0-py27_0      defaults
+    zeromq:             4.1.3-0            defaults
+    zlib:               1.2.8-0            defaults
+
+     Proceed ([y]/n)? y
+
+     Fetching packages ...
+     geos-3.4.2-0.t 100% |###############################################################################################################| Time: 0:00:03   5.24 MB/s
+     libgfortran-3. 100% |###############################################################################################################| Time: 0:00:00 509.61 kB/s
+     mkl-11.3.1-0.t 100% |###############################################################################################################| Time: 0:00:13   9.58 MB/s
+     openssl-1.0.2g 100% |###############################################################################################################| Time: 0:00:01   2.61 MB/s
+     decorator-4.0. 100% |###############################################################################################################| Time: 0:00:00 184.07 kB/s
+     mistune-0.7.2- 100% |###############################################################################################################| Time: 0:00:00 599.54 kB/s
+     numpy-1.10.4-p 100% |###############################################################################################################| Time: 0:00:01   3.53 MB/s
+     pygments-2.1.1 100% |###############################################################################################################| Time: 0:00:01   1.03 MB/s
+     pytz-2016.2-py 100% |###############################################################################################################| Time: 0:00:00 394.92 kB/s
+     pyzmq-15.2.0-p 100% |###############################################################################################################| Time: 0:00:00 733.23 kB/s
+     setuptools-20. 100% |###############################################################################################################| Time: 0:00:00 697.57 kB/s
+     shapely-1.5.13 100% |###############################################################################################################| Time: 0:00:00 499.39 kB/s
+     wheel-0.29.0-p 100% |###############################################################################################################| Time: 0:00:00 314.70 kB/s
+     cycler-0.10.0- 100% |###############################################################################################################| Time: 0:00:00   3.98 MB/s
+     pexpect-4.0.1- 100% |###############################################################################################################| Time: 0:00:00 297.87 kB/s
+     pip-8.1.1-py27 100% |###############################################################################################################| Time: 0:00:02 770.16 kB/s
+     python-dateuti 100% |###############################################################################################################| Time: 0:00:00 461.70 kB/s
+     scipy-0.17.0-n 100% |###############################################################################################################| Time: 0:00:04   6.52 MB/s
+     traitlets-4.2. 100% |###############################################################################################################| Time: 0:00:00 334.61 kB/s
+     ipython-4.1.2- 100% |###############################################################################################################| Time: 0:00:00   1.20 MB/s
+     jupyter_core-4 100% |###############################################################################################################| Time: 0:00:00 381.18 kB/s
+     pandas-0.18.0- 100% |###############################################################################################################| Time: 0:00:03   3.20 MB/s
+     jupyter_client 100% |###############################################################################################################| Time: 0:00:00 382.21 kB/s
+     matplotlib-1.5 100% |###############################################################################################################| Time: 0:00:02   3.57 MB/s
+     ipykernel-4.3. 100% |###############################################################################################################| Time: 0:00:00 355.93 kB/s
+     nbconvert-4.1. 100% |###############################################################################################################| Time: 0:00:00 474.83 kB/s
+     jupyter_consol 100% |###############################################################################################################| Time: 0:00:00 375.54 kB/s
+     notebook-4.1.0 100% |###############################################################################################################| Time: 0:00:01   2.74 MB/s
+     qtconsole-4.2. 100% |###############################################################################################################| Time: 0:00:00 465.87 kB/s
+     ipywidgets-4.1 100% |###############################################################################################################| Time: 0:00:00 389.39 kB/s
+     jupyter-1.0.0- 100% |###############################################################################################################| Time: 0:00:00   2.81 MB/s
+     Extracting packages ...
+     [shapely             ]|##############################################                                                                                    |  32%
+      [traitlets           ]|#########127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/css/bootstrap.min.css HTTP/1.1&quot; 200 -                                   |  54%
+      127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/css/font-awesome.min.css HTTP/1.1&quot; 200 -
+      127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/css/pygments/native.css HTTP/1.1&quot; 200 -
+      127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/css/style.css HTTP/1.1&quot; 200 -
+      127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/js/jquery.min.js HTTP/1.1&quot; 200 -
+      127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/js/bootstrap.min.js HTTP/1.1&quot; 200 -
+      127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/js/respond.min.js HTTP/1.1&quot; 200 -
+      127.0.0.1 - - [24/Mar/2016 08:54:02] &quot;GET /theme/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1&quot; 200 -
+      WARNING:root:Unable to find `/favicon.ico` or variations.
+      [      COMPLETE      ]|##################################################################################################################################| 100%
+      Linking packages ...
+      [      COMPLETE      ]|##################################################################################################################################| 100%
+      #
+      # To activate this environment, use:
+      # $ source activate points471
+      #
+      # To deactivate this environment, use:
+      # $ source deactivate
+      #
+</pre></div>
+
+
+<p>At this pont we are ready to roll with our new environment. So to activate it we follow the directions in the last set of lines above:</p>
+<div class="highlight"><pre>~/D/g/G/G/4/points ❯❯❯ source activate points471
+discarding /home/serge/anaconda2/bin from PATH
+prepending /home/serge/anaconda2/envs/points471/bin to PATH
+(points471)~/D/g/G/G/4/points ❯❯❯
+</pre></div>
+
+
+<p>Notice how my prompt has now changed to indicate I am using the <code>(points461)</code> environment.</p>
+<p>I can check to see where the search path leads to when issuing a command like calling <code>jupyter</code>:</p>
+<div class="highlight"><pre> (points471)~/D/g/G/G/4/points ❯❯❯ which jupyter
+ /home/serge/anaconda2/envs/points471/bin/jupyter
+</pre></div>
+
+
+<p>So we see that the search path points to the conda environment that is currently active.</p>
+<h2>Installing PySAL into Conda Environment</h2>
+<p>We relied on conda to install most of the packages we will need to analyze point patterns. There are a few additional packages that are not currently part of conda that we need. We would also like to install an experimental version of PySAL which differs from the one in the conda system.</p>
+<h3>Installing folium</h3>
+<div class="highlight"><pre>(points471)~/D/g/G/G/4/points ❯❯❯ pip install folium                                                                                                         ⏎
+Collecting folium
+Requirement already satisfied (use --upgrade to upgrade): Jinja2 in /home/serge/anaconda2/envs/points471/lib/python2.7/site-packages (from folium)
+Requirement already satisfied (use --upgrade to upgrade): MarkupSafe in /home/serge/anaconda2/envs/points471/lib/python2.7/site-packages (from Jinja2-&gt;folium)
+Installing collected packages: folium
+Successfully installed folium-0.2.0
+You are using pip version 7.1.2, however version 8.1.1 is available.
+You should consider upgrading via the &#39;pip install --upgrade pip&#39; command.
+</pre></div>
+
+
+<h3>Installing the custom PySAL Branch</h3>
+<p>Work on the new point pattern module in PySAL is happening in the <code>points_contrib</code> branch. To install it in our conda environment we do:</p>
+<div class="highlight"><pre>(points471)~/D/g/G/G/4/points ❯❯❯ pip install https://github.com/sjsrey/pysal/archive/points_contrib.zip                                                     ⏎
+Collecting https://github.com/sjsrey/pysal/archive/points_contrib.zip
+  Downloading https://github.com/sjsrey/pysal/archive/points_contrib.zip
+     | 20.4MB 17.5MB/s
+Installing collected packages: PySAL
+  Running setup.py install for PySAL
+Successfully installed PySAL-1.11.1
+You are using pip version 7.1.2, however version 8.1.1 is available.
+You should consider upgrading via the &#39;pip install --upgrade pip&#39; command.
+(points471)~/D/g/G/G/4/points ❯❯❯
+</pre></div>
+
+
+<p>One last test to make sure we have the correct version of PySAL:</p>
+<div class="highlight"><pre><span class="p">(</span><span class="n">points471</span><span class="p">)</span><span class="o">~/</span><span class="n">D</span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">G</span><span class="o">/</span><span class="n">G</span><span class="o">/</span><span class="mi">4</span><span class="o">/</span><span class="n">points</span> <span class="err">❯❯❯</span> <span class="n">ipython</span>                                                                                                                    <span class="err">⏎</span>
+<span class="n">Python</span> <span class="mf">2.7</span><span class="o">.</span><span class="mi">11</span> <span class="o">|</span><span class="n">Continuum</span> <span class="n">Analytics</span><span class="p">,</span> <span class="n">Inc</span><span class="o">.|</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Dec</span>  <span class="mi">6</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">18</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">32</span><span class="p">)</span> 
+<span class="n">Type</span> <span class="s">&quot;copyright&quot;</span><span class="p">,</span> <span class="s">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+
+<span class="n">IPython</span> <span class="mf">4.1</span><span class="o">.</span><span class="mi">2</span> <span class="o">--</span> <span class="n">An</span> <span class="n">enhanced</span> <span class="n">Interactive</span> <span class="n">Python</span><span class="o">.</span>
+<span class="err">?</span>         <span class="o">-&gt;</span> <span class="n">Introduction</span> <span class="ow">and</span> <span class="n">overview</span> <span class="n">of</span> <span class="n">IPython</span><span class="s">&#39;s features.</span>
+<span class="o">%</span><span class="n">quickref</span> <span class="o">-&gt;</span> <span class="n">Quick</span> <span class="n">reference</span><span class="o">.</span>
+<span class="n">help</span>      <span class="o">-&gt;</span> <span class="n">Python</span><span class="s">&#39;s own help system.</span>
+<span class="nb">object</span><span class="err">?</span>   <span class="o">-&gt;</span> <span class="n">Details</span> <span class="n">about</span> <span class="s">&#39;object&#39;</span><span class="p">,</span> <span class="n">use</span> <span class="s">&#39;object??&#39;</span> <span class="k">for</span> <span class="n">extra</span> <span class="n">details</span><span class="o">.</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">pysal</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">pysal</span><span class="o">.</span><span class="n">version</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="s">&#39;1.11.1&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span>
+</pre></div>
+
+
+<p>You should see version 1.11.1. If not, it means you likely haven't activated the conda environment and instead are using your base anaconda install. Activae your environment as explained above, if this is  the case.</p>
+<h2>Introduction to Point Patterns in PySAL</h2>
+        </div>
+    </section>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2016 Sergio Rey
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>              <p><small>  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://sjsrey.github.io/giasp16/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://sjsrey.github.io/giasp16/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://sjsrey.github.io/giasp16/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
