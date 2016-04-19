@@ -96,13 +96,13 @@ Note that this is all being done under Linux, but the commands should be similar
 </ol>
 <h2>Creating a new Conda Environment</h2>
 <p>In what follows we first check to see that conda is installed:</p>
-<div class="highlight"><pre>    ~ ❯❯❯ which conda
+<div class="highlight"><pre><span></span>    ~ ❯❯❯ which conda
     /home/serge/anaconda2/bin/conda
 </pre></div>
 
 
 <p>Good. Now we will create a new conda environment called <code>points471</code> and install several packages into it:</p>
-<div class="highlight"><pre>    ~ ❯❯❯ conda create -n points471 scipy pandas shapely matplotlib jupyter
+<div class="highlight"><pre><span></span>    ~ ❯❯❯ conda create -n points471 scipy pandas shapely matplotlib jupyter
     Fetching package metadata: ....
     Solving package specifications: ..........................................................................
     Package plan for installation in environment /home/serge/anaconda2/envs/points471:
@@ -271,7 +271,7 @@ Note that this is all being done under Linux, but the commands should be similar
 
 
 <p>At this pont we are ready to roll with our new environment. So to activate it we follow the directions in the last set of lines above:</p>
-<div class="highlight"><pre>~/D/g/G/G/4/points ❯❯❯ source activate points471
+<div class="highlight"><pre><span></span>~/D/g/G/G/4/points ❯❯❯ source activate points471
 discarding /home/serge/anaconda2/bin from PATH
 prepending /home/serge/anaconda2/envs/points471/bin to PATH
 (points471)~/D/g/G/G/4/points ❯❯❯
@@ -280,7 +280,7 @@ prepending /home/serge/anaconda2/envs/points471/bin to PATH
 
 <p>Notice how my prompt has now changed to indicate I am using the <code>(points461)</code> environment.</p>
 <p>I can check to see where the search path leads to when issuing a command like calling <code>jupyter</code>:</p>
-<div class="highlight"><pre> (points471)~/D/g/G/G/4/points ❯❯❯ which jupyter
+<div class="highlight"><pre><span></span> (points471)~/D/g/G/G/4/points ❯❯❯ which jupyter
  /home/serge/anaconda2/envs/points471/bin/jupyter
 </pre></div>
 
@@ -289,7 +289,7 @@ prepending /home/serge/anaconda2/envs/points471/bin to PATH
 <h2>Installing PySAL into the Conda Environment</h2>
 <p>We relied on conda to install most of the packages we will need to analyze point patterns. There are a few additional packages that are not currently part of conda that we need. We would also like to install an experimental version of PySAL which differs from the one in the conda system.</p>
 <h3>Installing folium</h3>
-<div class="highlight"><pre>(points471)~/D/g/G/G/4/points ❯❯❯ pip install folium                                                                                                         ⏎
+<div class="highlight"><pre><span></span>(points471)~/D/g/G/G/4/points ❯❯❯ pip install folium                                                                                                         ⏎
 Collecting folium
 Requirement already satisfied (use --upgrade to upgrade): Jinja2 in /home/serge/anaconda2/envs/points471/lib/python2.7/site-packages (from folium)
 Requirement already satisfied (use --upgrade to upgrade): MarkupSafe in /home/serge/anaconda2/envs/points471/lib/python2.7/site-packages (from Jinja2-&gt;folium)
@@ -302,7 +302,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <h3>Installing the custom PySAL Branch</h3>
 <p>Work on the new point pattern module in PySAL is happening in the <code>points_contrib</code> branch. To install it in our conda environment we do:</p>
-<div class="highlight"><pre>(points471)~/D/g/G/G/4/points ❯❯❯ pip install https://github.com/sjsrey/pysal/archive/points_contrib.zip                                                     ⏎
+<div class="highlight"><pre><span></span>(points471)~/D/g/G/G/4/points ❯❯❯ pip install https://github.com/sjsrey/pysal/archive/points_contrib.zip                                                     ⏎
 Collecting https://github.com/sjsrey/pysal/archive/points_contrib.zip
   Downloading https://github.com/sjsrey/pysal/archive/points_contrib.zip
      | 20.4MB 17.5MB/s
@@ -316,7 +316,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 
 <p>One last test to make sure we have the correct version of PySAL:</p>
-<div class="highlight"><pre><span class="p">(</span><span class="n">points471</span><span class="p">)</span><span class="o">~/</span><span class="n">D</span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">G</span><span class="o">/</span><span class="n">G</span><span class="o">/</span><span class="mi">4</span><span class="o">/</span><span class="n">points</span> <span class="err">❯❯❯</span> <span class="n">ipython</span>                                                                                                                    <span class="err">⏎</span>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="n">points471</span><span class="p">)</span><span class="o">~/</span><span class="n">D</span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">G</span><span class="o">/</span><span class="n">G</span><span class="o">/</span><span class="mi">4</span><span class="o">/</span><span class="n">points</span> <span class="err">❯❯❯</span> <span class="n">ipython</span>                                                                                                                    <span class="err">⏎</span>
 <span class="n">Python</span> <span class="mf">2.7</span><span class="o">.</span><span class="mi">11</span> <span class="o">|</span><span class="n">Continuum</span> <span class="n">Analytics</span><span class="p">,</span> <span class="n">Inc</span><span class="o">.|</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Dec</span>  <span class="mi">6</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">18</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">32</span><span class="p">)</span> 
 <span class="n">Type</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
 
@@ -343,7 +343,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <li><a href="http://nbviewer.ipython.org/github/sjsrey/giasp16/blob/master/content/pages/notebooks/centrography.ipynb">centrography.ipynb</a> </li>
 </ul>
 <p>Once you are done with this session you can either close the terminal you were working in or deactivate the environment:</p>
-<div class="highlight"><pre>(points471)~/D/g/G/G/4/points ❯❯❯ source deactivate
+<div class="highlight"><pre><span></span>(points471)~/D/g/G/G/4/points ❯❯❯ source deactivate
 discarding /home/serge/anaconda2/envs/points471/bin from PATH
 ~/D/g/G/G/4/points ❯❯❯
 </pre></div>
